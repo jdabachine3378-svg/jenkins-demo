@@ -12,6 +12,7 @@ Application Spring Boot simple pour démontrer un pipeline CI/CD complet avec Je
 - Docker Desktop installé et démarré
 - Compte GitHub
 - Accès Internet
+- Cloudflare Tunnel (exposition Internet)
 
 ## Structure du projet
 
@@ -163,8 +164,18 @@ Le pipeline Jenkins exécute les étapes suivantes :
 - ⚠️ Jenkins doit pouvoir exécuter Docker. Si Jenkins tourne comme service Windows, vérifier les droits d'accès.
 - ⚠️ Remplacer `USERNAME` dans le Jenkinsfile par votre nom d'utilisateur GitHub
 - ⚠️ Remplacer `myuser` dans le Dockerfile/Jenkinsfile par votre nom d'utilisateur Docker Hub (optionnel)
+## capteur d'ecron de tp :
+<img width="1919" height="971" alt="image" src="https://github.com/user-attachments/assets/2309fa44-92eb-402e-a406-c758f166fd92" />
+<img width="1916" height="969" alt="image" src="https://github.com/user-attachments/assets/0f2f2c22-ecbd-48f7-921d-5ae34b5ee163" />
+<img width="1911" height="957" alt="image" src="https://github.com/user-attachments/assets/331d51cd-d2d9-479b-b9dd-0dba6914a85b" />
+<img width="1755" height="1242" alt="image" src="https://github.com/user-attachments/assets/04a0519a-3e42-4112-a24f-a7722cf74ff1" />
+
+
+
+
+
 
 ## Auteur
-
+jamila dabachine 
 TP réalisé dans le cadre de l'apprentissage du CI/CD avec Jenkins.
 
