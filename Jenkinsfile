@@ -9,8 +9,8 @@ pipeline {
         stage('Git Clone') {
             steps {
                 checkout([$class: 'GitSCM',
-                    branches: [[name: '*/main']],
-                    userRemoteConfigs: [[url: 'https://github.com/USERNAME/first_test_jenkins.git']]
+                    branches: [[name: '*/master']],
+                    userRemoteConfigs: [[url: 'https://github.com/jdabachine3378-svg/jenkins-demo.git']]
                 ])
             }
         }

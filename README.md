@@ -75,6 +75,12 @@ tp30/
 
 ### Partie 4 : Publication sur GitHub
 
+Le projet est configuré pour utiliser le dépôt GitHub :
+- **URL** : `https://github.com/jdabachine3378-svg/jenkins-demo.git`
+- **Branche** : `master`
+
+Si vous souhaitez utiliser votre propre dépôt :
+
 1. Créer un dépôt GitHub personnel (ex : `first_test_jenkins`)
 
 2. Initialiser Git et pousser le code :
@@ -82,12 +88,12 @@ tp30/
    git init
    git add .
    git commit -m "Initial commit"
-   git branch -M main
+   git branch -M master
    git remote add origin https://github.com/USERNAME/first_test_jenkins.git
-   git push -u origin main
+   git push -u origin master
    ```
 
-   ⚠️ **Important** : Remplacer `USERNAME` par votre nom d'utilisateur GitHub.
+   ⚠️ **Important** : Si vous changez de dépôt, mettre à jour l'URL dans le `Jenkinsfile`.
 
 ### Partie 5 : Création du job Pipeline Jenkins
 
@@ -97,10 +103,10 @@ tp30/
 4. Valider
 
 5. Configuration :
-   - Cocher **GitHub project** et renseigner l'URL du dépôt
+   - Cocher **GitHub project** et renseigner l'URL : `https://github.com/jdabachine3378-svg/jenkins-demo.git`
    - Dans **Build Triggers**, cocher : **GitHub hook trigger for GITScm polling**
    - Dans **Pipeline**, sélectionner **Pipeline script** et coller le contenu du `Jenkinsfile`
-   - ⚠️ **Modifier l'URL GitHub** dans le Jenkinsfile avec votre URL de dépôt
+   - Le `Jenkinsfile` est déjà configuré avec la branche `master` et l'URL du dépôt
 
 6. Enregistrer le job
 
